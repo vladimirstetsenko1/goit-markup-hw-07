@@ -33,6 +33,9 @@ a {
   --overlay-modal-color: rgba(0, 0, 0, 0.2);
   --project-bg-color: rgba(33, 150, 243, 0.9);
   --close-icon-color: #000000;
+  --modal-text-color: rgba(117, 117, 117, 0.5);
+  --border-modal-color: rgba(33, 33, 33, 0.2);
+  --border-close-color: rgba(0, 0, 0, 0.1)
 }
 
 .page {
@@ -949,7 +952,7 @@ img {
   border-radius: 50%;
   fill: var(--close-icon-color);
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-close-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1003,7 +1006,7 @@ img {
   height: 40px;
   border-radius: 5px;
   outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-modal-color);
   background-color: transparent;
   padding-left: 42px;
   padding-right: 20px;
@@ -1018,6 +1021,8 @@ img {
   padding-top: 10px;
   margin-bottom: 10px;
   padding-left: 16px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
   resize: none;
 }
 
@@ -1034,7 +1039,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .check-icon {
@@ -1063,7 +1068,7 @@ img {
   display: inline-flex;
   align-items: centcenter;
   justify-content: center;
-  color: #757575;
+  color: var(--modal-text-color);
 }
 
 .check-policy {
