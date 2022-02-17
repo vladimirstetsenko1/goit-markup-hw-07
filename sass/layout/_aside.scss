@@ -1,0 +1,53 @@
+.aside {
+  display: block;
+  padding-top: 12px;
+  margin-right: 93px;
+}
+
+.aside-title,
+.middle-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-title-color);
+}
+
+.aside-list {
+  display: flex;
+  padding-top: 16px;
+}
+
+.aside-item + .aside-item {
+  margin-left: 10px;
+}
+
+.aside-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-social-color);
+  background-color: var(--footer-social-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.aside-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.aside-link:hover,
+.aside-link:focus {
+  background-color: var(--background-social-color);
+}
+
+.aside-link:hover .aside-icon,
+.aside-link:focus .aside-icon {
+  fill: var(--secondary-social-color);
+}

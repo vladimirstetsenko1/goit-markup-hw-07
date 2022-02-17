@@ -1,0 +1,50 @@
+.section-work {
+  padding-bottom: 94px;
+}
+
+.work {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-work .work {
+  color: var(--primary-text-color);
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-apps {
+  position: relative;
+}
+
+.product-apps::before {
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background-color: var(--feature-bg-color);
+}
+
+.product-apps-text {
+  position: absolute;
+  bottom: -8%;
+  right: 15%;
+  width: 270px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-title-color);
+}

@@ -1,3 +1,23 @@
-body {
-  background-color: tomato;
-}
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/btn";
+@import "./components/container";
+@import "./components/modal";
+@import "./components/footer-logo";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/section";
+@import "./layout/section-work";
+@import "./layout/social";
+@import "./layout/user";
+@import "./layout/clients";
+@import "./layout/footer-container";
+@import "./layout/aside";
+@import "./layout/footer-middle";
+@import "./layout/project";
+
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/backdrop";

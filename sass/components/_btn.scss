@@ -1,0 +1,122 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: transparent;
+  padding: 10px 32px;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px var(--accent-shadow);
+}
+
+.button-modal {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
+  padding: 10px 55px 10px 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  border: transparent;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+  margin-left: 130px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-middle {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 62px 10px 29px;
+}
+
+.button-middle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
+  border-radius: 4px;
+  border: transparent;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons-title-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-items .button-item + .button-item {
+  margin-left: 8px;
+}
+
+.button.primery {
+  padding: 6px 22px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.primery {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.button.primery:hover,
+.button.primery:focus {
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+}
+
+.button-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
