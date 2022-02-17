@@ -4,7 +4,7 @@
   background-color: var(--secondary-bg-color);
 }
 
-.galery {
+.user__galery {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -13,16 +13,16 @@
   letter-spacing: 0.03em;
 }
 
-.galery-list {
+.user__list {
   display: flex;
   justify-content: space-between;
 }
 
-.user .galery {
+.user .user__galery {
   color: var(--primary-text-color);
 }
 
-.galery-item {
+.user__item {
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,15 +30,15 @@
   background-color: var(--primary-bg-color);
 }
 
-.galery-item:nth-last-child(4n) {
+.user__item:nth-last-child(4n) {
   margin-left: 0;
 }
 
-.head {
+.user__head {
   padding-top: 30px;
 }
 
-.headline {
+.user__headline {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -47,7 +47,7 @@
   letter-spacing: 0.03em;
 }
 
-.tagline {
+.user__tagline {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;

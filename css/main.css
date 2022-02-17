@@ -39,7 +39,7 @@ img {
   list-style: none;
 }
 
-.button {
+.hero__button.button {
   display: inline-block;
   border-radius: 4px;
   border: transparent;
@@ -75,37 +75,12 @@ img {
   border-radius: 4px;
 }
 
-.button-middle {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 10px 62px 10px 29px;
-}
-
-.button-middle {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.85;
-  border-radius: 4px;
-  border: transparent;
-  letter-spacing: 0.06em;
-  color: var(--text-title-color);
-  background-color: var(--accent-color);
-  position: relative;
-  width: 200px;
-  height: 50px;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-
 .buttons {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.buttons-title-hidden {
+.buttons__title-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -118,18 +93,18 @@ img {
   margin: -1px;
 }
 
-.button-items {
+.buttons__items {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-items .button-item + .button-item {
+.buttons__items .buttons__items + .buttons__items {
   margin-left: 8px;
 }
 
-.button.primery {
+.buttons__primery {
   padding: 6px 22px;
   font-style: normal;
   font-weight: 500;
@@ -140,18 +115,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button.primery {
+.buttons__primery {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
 }
 
-.button.primery:hover,
-.button.primery:focus {
+.buttons__primery:hover,
+.buttons__primery:focus {
   color: var(--text-title-color);
   background-color: var(--accent-color);
 }
 
-.button-item:hover {
+.buttons__item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -477,7 +452,7 @@ img {
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
   width: 696px;
@@ -494,7 +469,7 @@ img {
   padding-bottom: 94px;
 }
 
-.box-icon {
+.feature-list__box-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -506,12 +481,12 @@ img {
   border-radius: 4px;
 }
 
-.item-icon {
+.feature-list__item-icon {
   width: 70px;
   height: 70px;
 }
 
-.title {
+.feature-list__title {
   margin-bottom: 10px;
   font-style: normal;
   font-weight: bold;
@@ -522,7 +497,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.text {
+.feature-list__text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -535,27 +510,27 @@ img {
   display: flex;
 }
 
-.item {
+.feature-list__item {
   width: 270px;
 }
 
-.feature-list .item + .item {
+.feature-list .feature-list__item + .feature-list__item {
   margin-left: 30px;
 }
 
-.feature-list .title {
+.feature-list .feature-list__title {
   color: var(--primary-text-color);
 }
 
-.feature-list .text {
+.feature-list .feature-list__text {
   color: var(--secondory-text-color);
 }
 
-.section-work {
+.work {
   padding-bottom: 94px;
 }
 
-.work {
+.work__title {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -564,20 +539,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section-work .work {
+.work .work__title {
   color: var(--primary-text-color);
 }
 
-.work-list {
+.work__list {
   display: flex;
   justify-content: space-between;
 }
 
-.product-apps {
+.work__apps {
   position: relative;
 }
 
-.product-apps::before {
+.work__apps::before {
   position: absolute;
   content: "";
   width: 370px;
@@ -586,7 +561,7 @@ img {
   background-color: var(--feature-bg-color);
 }
 
-.product-apps-text {
+.work__apps-text {
   position: absolute;
   bottom: -8%;
   right: 15%;
@@ -644,7 +619,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.galery {
+.user__galery {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -653,31 +628,31 @@ img {
   letter-spacing: 0.03em;
 }
 
-.galery-list {
+.user__list {
   display: flex;
   justify-content: space-between;
 }
 
-.user .galery {
+.user .user__galery {
   color: var(--primary-text-color);
 }
 
-.galery-item {
+.user__item {
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-bg-color);
 }
 
-.galery-item:nth-last-child(4n) {
+.user__item:nth-last-child(4n) {
   margin-left: 0;
 }
 
-.head {
+.user__head {
   padding-top: 30px;
 }
 
-.headline {
+.user__headline {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -686,7 +661,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.tagline {
+.user__tagline {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -796,8 +771,8 @@ img {
   margin-right: 93px;
 }
 
-.aside-title,
-.middle-title {
+.aside__title,
+.footer-middle__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -811,11 +786,11 @@ img {
   padding-top: 16px;
 }
 
-.aside-item + .aside-item {
+.aside-list__item + .aside-list__item {
   margin-left: 10px;
 }
 
-.aside-link {
+.aside-list__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -827,27 +802,27 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.aside-icon {
+.aside-list__icon {
   width: 20px;
   height: 20px;
 }
 
-.aside-link:hover,
-.aside-link:focus {
+.aside-list__link:hover,
+.aside-list__link:focus {
   background-color: var(--background-social-color);
 }
 
-.aside-link:hover .aside-icon,
-.aside-link:focus .aside-icon {
+.aside-list__link:hover .aside-list__icon,
+.aside-list__link:focus .aside-list__icon {
   fill: var(--secondary-social-color);
 }
 
-.middle-title {
+.footer-middle__title {
   padding-top: 12px;
   margin-bottom: 20px;
 }
 
-.middle-field {
+.footer-middle__field {
   display: flex;
 }
 
@@ -855,14 +830,40 @@ img {
   position: relative;
 }
 
-.middle-icon {
+.middle-submit__button.button {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 62px 10px 29px;
+  cursor: pointer;
+}
+
+.middle-submit__button.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
+  border-radius: 4px;
+  border: transparent;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.middle-submit__icon {
   position: absolute;
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.middle-input {
+.footer-middle__input {
   font-size: 16px;
   line-height: 20px;
   width: 358px;
@@ -886,7 +887,7 @@ img {
   flex-wrap: wrap;
 }
 
-.project-item {
+.project-list__item {
   position: relative;
   width: 370px;
   border: 1px solid var(--box-project-color);
@@ -895,30 +896,30 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item:hover {
+.project-list__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-after-item {
+.project-list__after-item {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
 }
 
-.project-item:nth-child(3n) {
+.project-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.project-item:nth-last-child(-n + 3) {
+.project-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.project-solution {
+.project-list__solution {
   position: relative;
   overflow: hidden;
 }
 
-.project-text {
+.project-list__text {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -936,11 +937,11 @@ img {
   overflow: auto;
 }
 
-.project-solution:hover .project-text {
+.project-list__solution:hover .project-list__text {
   transform: translateY(0);
 }
 
-.caption {
+.project-list__caption {
   margin-bottom: 9px;
   font-weight: bold;
   font-size: 18px;
@@ -950,7 +951,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.lead {
+.project-list__lead {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;

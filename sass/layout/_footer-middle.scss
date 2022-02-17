@@ -1,9 +1,9 @@
-.middle-title {
+.footer-middle__title {
   padding-top: 12px;
   margin-bottom: 20px;
 }
 
-.middle-field {
+.footer-middle__field {
   display: flex;
 }
 
@@ -11,14 +11,40 @@
   position: relative;
 }
 
-.middle-icon {
+.middle-submit__button.button {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 62px 10px 29px;
+  cursor: pointer;
+}
+
+.middle-submit__button.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
+  border-radius: 4px;
+  border: transparent;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+  background-color: var(--accent-color);
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.middle-submit__icon {
   position: absolute;
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.middle-input {
+.footer-middle__input {
   font-size: 16px;
   line-height: 20px;
   width: 358px;
