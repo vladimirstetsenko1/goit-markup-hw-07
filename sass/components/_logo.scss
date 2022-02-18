@@ -1,8 +1,6 @@
 .nav__logo {
+  @include font($fz: 26px, $fw: null, $ls: 0.03em, $lh: 1.19);
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -11,13 +9,10 @@
 }
 
 .footer__logo {
+  @include font($fz: 26px, $fw: bold, $ls: 0.03em, $lh: 1.19);
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 

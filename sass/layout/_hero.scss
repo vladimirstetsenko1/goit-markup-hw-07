@@ -4,6 +4,14 @@
   text-align: center;
   background-color: var(--footer-bg-color);
   color: var(--text-title-color);
+  &__title {
+    @include font($fz: 44px, $fw: 900, $ls: 0.06em, $lh: 1.36);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 696px;
+    text-transform: uppercase;
+    color: var(--text-title-color);
+  }
 }
 
 .hero-img {
@@ -19,16 +27,4 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
-}
-
-.hero__title {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-title-color);
 }

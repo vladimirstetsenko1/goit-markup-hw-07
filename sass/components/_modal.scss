@@ -7,7 +7,6 @@
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-bg-color);
-
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -25,7 +24,6 @@
   fill: var(--close-icon-color);
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -39,12 +37,9 @@
 }
 
 .modal__title {
+  @include font($fz: 20px, $fw: bold, $ls: 0.03em, $lh: 1.15);
   margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -82,7 +77,6 @@
   background-color: transparent;
   padding-left: 42px;
   padding-right: 20px;
-
   transition: border color 250ms cubic-bezier(0.4, 0, 0.2, 1) fill 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -126,17 +120,14 @@
 }
 
 .modal__check-text span {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font($fz: 14px, $fw: null, $ls: 0.03em, $lh: 1.71);
   width: 15px;
   height: 15px;
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 5px;
-
   display: inline-flex;
-  align-items: centcenter;
+  align-items: center;
   justify-content: center;
   color: #757575;
 }
