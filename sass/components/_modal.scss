@@ -98,10 +98,7 @@
 }
 
 .modal__check-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font($fz: 14px, $fw: normal, $ls: 0.03em, $lh: 1.71);
   margin-bottom: 20px;
   color: #757575;
 }

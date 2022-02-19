@@ -1,50 +1,35 @@
 .work {
   padding-bottom: 94px;
-}
-
-.work__title {
-  margin-bottom: 50px;
-
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.work .work__title {
-  color: var(--primary-text-color);
-}
-
-.work__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.work__apps {
-  position: relative;
-}
-
-.work__apps::before {
-  position: absolute;
-  content: "";
-  width: 370px;
-  height: 70px;
-  bottom: 0;
-  background-color: var(--feature-bg-color);
-}
-
-.work__apps-text {
-  position: absolute;
-  bottom: -8%;
-  right: 15%;
-  width: 270px;
-  height: 70px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-title-color);
+  &__title {
+    @include font($fz: 36px, $fw: bold, $ls: 0.03em, $lh: 1.17);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__apps {
+    position: relative;
+  }
+  &__apps::before {
+    position: absolute;
+    content: "";
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    background-color: var(--feature-bg-color);
+  }
+  &__apps-text {
+    position: absolute;
+    bottom: -8%;
+    right: 15%;
+    width: 270px;
+    height: 70px;
+    @include font($fz: 14px, $fw: bold, $ls: 0.03em, $lh: 1.14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-title-color);
+  }
 }
